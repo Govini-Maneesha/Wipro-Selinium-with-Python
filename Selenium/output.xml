@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.9 on win32)" generated="2026-02-20T18:41:42.093795" rpa="false" schemaversion="5">
+<suite id="s1" name="Order" source="C:\Users\HP\PycharmProjects\PythonProject\Python advance programing\PythonProject\Robot Framework\Selenium\Order.robot">
+<test id="s1-t1" name="Complete Checkout Flow" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:41:42.281498" level="INFO">Opening browser 'chrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T18:41:42.281498" elapsed="5.045040"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-20T18:41:47.329393" elapsed="0.039059"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-02-20T18:41:47.370705" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:41:50.375049" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:41:47.374879" elapsed="3.000170"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:41:50.375049" level="INFO">Executing JavaScript:
+document.querySelectorAll("iframe[id^='aswift']").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("iframe[id^='aswift']").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:41:50.375049" elapsed="0.036006"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:41:50.411055" level="INFO">Executing JavaScript:
+document.querySelectorAll("ins.adsbygoogle").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("ins.adsbygoogle").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:41:50.411055" elapsed="0.014209"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:41:52.427805" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:41:50.425264" elapsed="2.002541"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:41:52.450156" level="INFO">Clicking link 'Shop'.</msg>
+<arg>Shop</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:41:52.427805" elapsed="5.397122"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:00.828603" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:41:57.826862" elapsed="3.001741"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:00.831922" level="INFO">Executing JavaScript:
+document.querySelectorAll("iframe[id^='aswift']").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("iframe[id^='aswift']").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:42:00.828603" elapsed="0.083310"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:02.912568" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:00.911913" elapsed="2.000655"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=(//a[contains(text(),'Add to basket')])[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T18:42:02.912568" elapsed="0.342740"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:05.259855" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:03.255308" elapsed="2.004547"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:05.259855" level="INFO">Executing JavaScript:
+document.querySelectorAll("a.add_to_cart_button")[0].click();
+Without any arguments.</msg>
+<arg>document.querySelectorAll("a.add_to_cart_button")[0].click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:42:05.259855" elapsed="0.024757"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:08.285929" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:05.284612" elapsed="3.001872"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:08.288174" level="INFO">Executing JavaScript:
+document.querySelector("a.added_to_cart").click();
+Without any arguments.</msg>
+<arg>document.querySelector("a.added_to_cart").click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:42:08.287369" elapsed="2.236376"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:13.524168" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:10.523745" elapsed="3.000423"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:13.525800" level="INFO">Clicking element 'xpath=//a[contains(text(),'Proceed to Checkout')]'.</msg>
+<arg>xpath=//a[contains(text(),'Proceed to Checkout')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:13.525800" elapsed="2.885231"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:20.412150" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:16.411031" elapsed="4.001119"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:20.412150" level="INFO">Typing text 'John' into text field 'id=billing_first_name'.</msg>
+<arg>id=billing_first_name</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:20.412150" elapsed="0.210487"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:20.622637" level="INFO">Typing text 'Doe' into text field 'id=billing_last_name'.</msg>
+<arg>id=billing_last_name</arg>
+<arg>Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:20.622637" elapsed="0.154209"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:20.776846" level="INFO">Typing text 'johndoe123@gmail.com' into text field 'id=billing_email'.</msg>
+<arg>id=billing_email</arg>
+<arg>johndoe123@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:20.776846" elapsed="0.248317"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:21.025163" level="INFO">Typing text '9876543210' into text field 'id=billing_phone'.</msg>
+<arg>id=billing_phone</arg>
+<arg>9876543210</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:21.025163" elapsed="0.137608"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:21.169133" level="INFO">Typing text '123 Street' into text field 'id=billing_address_1'.</msg>
+<arg>id=billing_address_1</arg>
+<arg>123 Street</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:21.169133" elapsed="0.202360"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:21.371493" level="INFO">Typing text 'Bangalore' into text field 'id=billing_city'.</msg>
+<arg>id=billing_city</arg>
+<arg>Bangalore</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:21.371493" elapsed="0.217118"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:21.596615" level="INFO">Typing text '560001' into text field 'id=billing_postcode'.</msg>
+<arg>id=billing_postcode</arg>
+<arg>560001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:21.588611" elapsed="0.189137"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:21.777748" level="INFO">Selecting options from selection list 'id=billing_country' by label India.</msg>
+<arg>id=billing_country</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-20T18:42:21.777748" elapsed="0.126271"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:23.904493" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:21.904019" elapsed="2.000474"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:23.906040" level="INFO">Selecting options from selection list 'id=billing_state' by label Karnataka.</msg>
+<msg time="2026-02-20T18:42:24.181484" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-20T18:42:24.181484" level="FAIL">ElementNotInteractableException: Message: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=145.0.7632.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff614a44435
+	0x7ff614a44490
+	0x7ff6147dd49d
+	0x7ff6147e5411
+	0x7ff6147e8534
+	0x7ff6147e85ff
+	0x7ff61483ce13
+	0x7ff61482c1da
+	0x7ff6148617ca
+	0x7ff61482aa46
+	0x7ff614885728
+	0x7ff614828e38
+	0x7ff614829d23
+	0x7ff614d13b30
+	0x7ff614d0e3b8
+	0x7ff614d2e72a
+	0x7ff614a607e5
+	0x7ff614a6978c
+	0x7ff614a4d794
+	0x7ff614a4d946
+	0x7ff614a33457
+	0x7ff8e440e8d7
+	0x7ff8e622c40c
+</msg>
+<arg>id=billing_state</arg>
+<arg>Karnataka</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="FAIL" start="2026-02-20T18:42:23.906040" elapsed="0.300215">ElementNotInteractableException: Message: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=145.0.7632.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff614a44435
+	0x7ff614a44490
+	0x7ff6147dd49d
+	0x7ff6147e5411
+	0x7ff6147e8534
+	0x7ff6147e85ff
+	0x7ff61483ce13
+	0x7ff61482c1da
+	0x7ff6148617ca
+	0x7ff61482aa46
+	0x7ff614885728
+	0x7ff614828e38
+	0x7ff614829d23
+	0x7ff614d13b30
+	0x7ff614d0e3b8
+	0x7ff614d2e72a
+	0x7ff614a607e5
+	0x7ff614a6978c
+	0x7ff614a4d794
+	0x7ff614a4d946
+	0x7ff614a33457
+	0x7ff8e440e8d7
+	0x7ff8e622c40c
+</status>
+</kw>
+<arg>Select From List By Label</arg>
+<arg>id=billing_state</arg>
+<arg>Karnataka</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-02-20T18:42:23.904493" elapsed="0.301762"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:26.209145" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:24.208016" elapsed="2.001129"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=payment_method_cod</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T18:42:26.209145" elapsed="0.333053"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:26.542198" level="INFO">Clicking element 'id=payment_method_cod'.</msg>
+<arg>id=payment_method_cod</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T18:42:26.542198" elapsed="0.086859"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:28.630530" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:26.629057" elapsed="2.001473"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:28.632546" level="INFO">Executing JavaScript:
+document.querySelectorAll("iframe[id^='aswift']").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("iframe[id^='aswift']").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:42:28.632546" elapsed="0.032606"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:28.667557" level="INFO">Executing JavaScript:
+document.querySelectorAll("ins.adsbygoogle").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("ins.adsbygoogle").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:42:28.666764" elapsed="0.011077"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:28.681360" level="INFO">Executing JavaScript:
+document.querySelectorAll("[data-google-vignette]").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("[data-google-vignette]").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:42:28.677841" elapsed="0.005479"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:30.683618" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:28.683320" elapsed="2.000298"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=place_order</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T18:42:30.683618" elapsed="0.313504"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:32.997615" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:30.997122" elapsed="2.000493"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:32.997615" level="INFO">Executing JavaScript:
+document.getElementById("place_order").click();
+Without any arguments.</msg>
+<arg>document.getElementById("place_order").click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-20T18:42:32.997615" elapsed="0.140833"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T18:42:38.141544" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T18:42:33.140614" elapsed="5.000930"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-20T18:42:38.293810" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff614a44435
+	0x7ff614a44490
+	0x7ff6147dd286
+	0x7ff614827eb3
+	0x7ff6148616d2
+	0x7ff61485b821
+	0x7ff61485aab3
+	0x7ff6147a6295
+	0x7ff614d13b30
+	0x7ff614d0e3b8
+	0x7ff614d2e72a
+	0x7ff614a607e5
+	0x7ff614a6978c
+	0x7ff6147a50fa
+	0x7ff614e76798
+	0x7ff8e440e8d7
+	0x7ff8e622c40c
+</msg>
+<msg time="2026-02-20T18:42:38.294816" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff614a44435
+	0x7ff614a44490
+	0x7ff6147dd49d
+	0x7ff6147c89b2
+	0x7ff6147eed75
+	0x7ff614868ec0
+	0x7ff614885072
+	0x7ff614828e38
+	0x7ff614829d23
+	0x7ff614d13b30
+	0x7ff614d0e3b8
+	0x7ff614d2e72a
+	0x7ff614a607e5
+	0x7ff614a6978c
+	0x7ff614a4d794
+	0x7ff614a4d946
+	0x7ff614a33457
+	0x7ff8e440e8d7
+	0x7ff8e622c40c
+</msg>
+<arg>Thank you. Your order has been received.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-02-20T18:42:38.141544" elapsed="0.157163">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff614a44435
+	0x7ff614a44490
+	0x7ff6147dd49d
+	0x7ff6147c89b2
+	0x7ff6147eed75
+	0x7ff614868ec0
+	0x7ff614885072
+	0x7ff614828e38
+	0x7ff614829d23
+	0x7ff614d13b30
+	0x7ff614d0e3b8
+	0x7ff614d2e72a
+	0x7ff614a607e5
+	0x7ff614a6978c
+	0x7ff614a4d794
+	0x7ff614a4d946
+	0x7ff614a33457
+	0x7ff8e440e8d7
+	0x7ff8e622c40c
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-20T18:42:38.298707" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-20T18:42:38.298707" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-20T18:41:42.281498" elapsed="56.018215">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff614a44435
+	0x7ff614a44490
+	0x7ff6147dd49d
+	0x7ff6147c89b2
+	0x7ff6147eed75
+	0x7ff614868ec0
+	0x7ff614885072
+	0x7ff614828e38
+	0x7ff614829d23
+	0x7ff614d13b30
+	0x7ff614d0e3b8
+	0x7ff614d2e72a
+	0x7ff614a607e5
+	0x7ff614a6978c
+	0x7ff614a4d794
+	0x7ff614a4d946
+	0x7ff614a33457
+	0x7ff8e440e8d7
+	0x7ff8e622c40c
+</status>
+</test>
+<status status="FAIL" start="2026-02-20T18:41:42.109713" elapsed="56.191000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Order" id="s1" pass="0" fail="1" skip="0">Order</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-20T18:42:38.293810" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff614a44435
+	0x7ff614a44490
+	0x7ff6147dd286
+	0x7ff614827eb3
+	0x7ff6148616d2
+	0x7ff61485b821
+	0x7ff61485aab3
+	0x7ff6147a6295
+	0x7ff614d13b30
+	0x7ff614d0e3b8
+	0x7ff614d2e72a
+	0x7ff614a607e5
+	0x7ff614a6978c
+	0x7ff6147a50fa
+	0x7ff614e76798
+	0x7ff8e440e8d7
+	0x7ff8e622c40c
+</msg>
+</errors>
+</robot>
