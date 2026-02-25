@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.9 on win32)" generated="2026-02-21T16:50:38.076309" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTestCase2" source="C:\Users\HP\PycharmProjects\PythonProject\Python advance programing\PythonProject\Robot Framework\OrangeHRM\LoginTestCase2.robot">
+<test id="s1-t1" name="TC_02 Verify Error Message On Invalid Login" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T16:50:38.261913" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T16:50:38.260888" elapsed="7.491178"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T16:50:45.753058" elapsed="0.039347"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-02-21T16:50:45.793783" elapsed="0.003024"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='username']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T16:50:45.798322" elapsed="0.969637"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-21T16:50:49.770123" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-21T16:50:46.768935" elapsed="3.001188"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T16:50:49.772149" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@name='username']'.</msg>
+<arg>xpath=//input[@name='username']</arg>
+<arg>${VALID_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T16:50:49.771138" elapsed="0.146838"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-21T16:50:52.919400" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-21T16:50:49.918990" elapsed="3.000410"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T16:50:52.920936" level="INFO">Typing text 'wrong123' into text field 'xpath=//input[@name='password']'.</msg>
+<arg>xpath=//input[@name='password']</arg>
+<arg>${INVALID_PASS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T16:50:52.919929" elapsed="0.135149"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-21T16:50:56.056247" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-21T16:50:53.056052" elapsed="3.000195"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-21T16:50:56.058257" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T16:50:56.057264" elapsed="0.180945"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-21T16:50:59.239778" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-21T16:50:56.238209" elapsed="3.001569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//p[contains(@class,'oxd-alert-content-text')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T16:50:59.240806" elapsed="0.044645"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-21T16:50:59.286435" level="INFO">Verifying element 'xpath=//p[contains(@class,'oxd-alert-content-text')]' contains exact text 'Invalid credentials'.</msg>
+<arg>xpath=//p[contains(@class,'oxd-alert-content-text')]</arg>
+<arg>Invalid credentials</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-21T16:50:59.286435" elapsed="0.030389"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2026-02-21T16:50:59.369768" level="INFO">Current page does not contain text 'Dashboard'.</msg>
+<arg>Dashboard</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2026-02-21T16:50:59.316824" elapsed="0.052944"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-21T16:50:59.370937" elapsed="2.198436"/>
+</kw>
+<doc>Verify error message when valid username and invalid password are used.</doc>
+<status status="PASS" start="2026-02-21T16:50:38.259856" elapsed="23.310516"/>
+</test>
+<status status="PASS" start="2026-02-21T16:50:38.078824" elapsed="23.493021"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LoginTestCase2" id="s1" pass="1" fail="0" skip="0">LoginTestCase2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
